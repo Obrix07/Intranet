@@ -1,14 +1,12 @@
 import React from "react";
 
-const Card = ({collaborator}) => {
-
-    console.log(collaborator)
-
+const CardRandom = ({collaborator}) => {
+    
     return ( 
         <>
-        <div className="card-listing">
+        <div className="card-random">
             <img src={collaborator.photo} alt="" />
-                <div className="card-content-listing">
+                <div className="card-content-random">
                     <h4>{collaborator.firstname} {collaborator.lastname}</h4>
                     <p>age</p>
                     <p>{collaborator.city}, {collaborator.country}</p>
@@ -21,4 +19,4 @@ const Card = ({collaborator}) => {
      );
 }
  
-export default Card;
+export default CardRandom;
