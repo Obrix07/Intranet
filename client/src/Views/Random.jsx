@@ -27,6 +27,7 @@ const Random = () => {
             </header>
             <main className="main-random">
                 {randomCollaborator && <CardRandom collaborator={randomCollaborator}/>}
+                <button onClick={getRandom}>ffdd</button>
             </main>
         </div>
         </>

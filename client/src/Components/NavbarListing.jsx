@@ -13,7 +13,8 @@ const NavbarListing = () => {
         <div className="header-listing">
             <img src={Logo} alt="" />
             <div className="navbar-right-listing">
-                <img src={Logo} alt=""/>
+                <Link to="/random" className="underline">Dire bonjour !</Link>
+                <Link to="/listing" className="underline">Listing</Link>
                 <button onClick={LogOut} className="button-listing">Se déconnecter</button>
             </div>
         </div>
@@ -22,3 +23,5 @@ const NavbarListing = () => {
 }
  
 export default NavbarListing;
+
+// <div className="navbar-right-listing"><img src={collaborator.photo} alt="" />

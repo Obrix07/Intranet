@@ -4,6 +4,7 @@ import Login from './Views/Login'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Listing from './Views/Listing';
 import Random from './Views/Random';
+import UserModif from './Views/Modif';
 
 function setToken(userToken) {
   localStorage.setItem("token", JSON.stringify(userToken));
@@ -29,6 +30,7 @@ function App() {
         <Route exact path="/" element={<Login/>} />
         <Route exact path="/listing" element={<Listing/>} />
         <Route exact path="/random" element={<Random/>} />
+        <Route exact path="/modif" element={<UserModif/>} />
       </Routes>
     </Router>
   )
