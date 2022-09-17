@@ -1,5 +1,4 @@
 import React from "react";
-import '../css/Listing.css'
 import NavbarListing from "../Components/NavbarListing"
 import Card from "../Components/Card";
 import { useState, useEffect } from "react";

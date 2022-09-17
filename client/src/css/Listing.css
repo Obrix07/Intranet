@@ -8,6 +8,7 @@
 
 .container-listing {
     background: linear-gradient(slateblue, violet);
+    width: auto;
 }
 
 .header-listing {

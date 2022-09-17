@@ -1,9 +1,8 @@
 import React from "react";
-import NavbarRandom from "../Components/NavbarRandom";
-import '../css/Random.css';
-import CardRandom from "../Components/CardRandom";
 import APIService from "../services/APIService";
 import { useEffect, useState } from "react";
+import NavbarListing from "../Components/NavbarListing";
+import Card from "../Components/Card";
 
 const Random = () => {
 
@@ -23,11 +22,15 @@ const Random = () => {
         <>
         <div className="container-random">
             <header>
-                <NavbarRandom />
+                <NavbarListing />
             </header>
             <main className="main-random">
-                {randomCollaborator && <CardRandom collaborator={randomCollaborator}/>}
-                <button onClick={getRandom}>ffdd</button>
+                {randomCollaborator && <Card collaborator={randomCollaborator}/>}
+                <div className="main-random-right-content">
+                  <h3>Bienvenue sur votre Intranet !</h3>
+                  <p>Aller dire bonjour à votre nouveau collaborateur, si son profil ne vous inspire pas, cliquez sur le <b>boutton ci-dessous</b> pour en voir un nouveau, ou sinon sur "listing" dans le menu pour afficher tout vos collaborateurs</p>
+                  <button onClick={getRandom}>Bouton ci-dessous</button>
+                </div>
             </main>
         </div>
         </>

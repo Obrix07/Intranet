@@ -10,6 +10,7 @@ const Card = ({collaborator}) => {
             <img src={collaborator.photo} alt="" />
                 <div className="card-content-listing">
                     <h4>{collaborator.firstname} {collaborator.lastname}</h4>
+                    <br />
                     <p><b>Localisation</b> : {collaborator.city}, {collaborator.country}</p>
                     <p><b>E-mail</b> : {collaborator.email}</p>
                     <p><b>Tel</b> : {collaborator.phone}</p>

@@ -1,6 +1,5 @@
 import React from "react";
 import Logo from "../images/logo2.png";
-import { Link } from "react-router-dom";
 import { useState } from "react"
 
 async function LoginUser(connexion) {
@@ -30,7 +29,7 @@ const Form = () => {
             "email": username,
             "password": password
         });
-        window.location = "/listing";
+        window.location = "/random";
     }
 
     return ( 
