@@ -100,3 +100,59 @@
     color: white;
     transform: scale(1.05);
 }
+
+@media (max-width: 1100px) {
+
+    .header-login img {
+        padding-top: 20px;
+        width: 15%;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .form-login {
+        width: 300px;
+        text-align: center;
+    }
+
+    .header-login img {
+        padding-top: 20px;
+        width: 20%;
+    }
+
+    .form-login img {
+        width: 35%;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .form-login {
+        width: 200px;
+    }
+
+    .header-login img {
+        padding-top: 20px;
+        width: 20%;
+    }
+    
+    .list-input-login {
+        width: 250px;
+    }
+    
+    .input-login {
+        height: 30px;
+    }
+    
+    .form-login img {
+        width: 35%;
+    }
+    
+    .form-head-login {
+        width: 250px;
+    }
+
+}

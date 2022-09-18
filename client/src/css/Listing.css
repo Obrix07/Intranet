@@ -85,6 +85,14 @@
     background: hsl(0 0% 100% / 0.1)
 }
 
+.main-listing {
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
 .card-listing {
     width: 280px;
     display: flex;
@@ -127,11 +135,25 @@
     transform: scale(1.05);
 }
 
-.main-listing {
-    display: flex;
-    justify-content: center;
-    margin: 70px;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding-bottom: 80px;
+@media (max-width: 550px) {
+    
+    .header-listing {
+        flex-direction: row;
+        justify-content: center;
+        height: 80px;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .header-listing img {
+        display: none;
+    }
+    
+    .navbar-right-listing {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 20px;
+    }
+
 }
