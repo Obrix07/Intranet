@@ -8,7 +8,7 @@ const Listing = () => {
 
     const [collaborators, setCollaborators] = useState([]);
 
-  const getAllCollaborator = async () => {
+    const getAllCollaborator = async () => {
     const data = await APIService.getAllCollaborators();
     
     setCollaborators(data);

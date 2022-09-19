@@ -23,5 +23,3 @@ const NavbarListing = () => {
 }
  
 export default NavbarListing;
-
-// <div className="navbar-right-listing"><img src={collaborator.photo} alt="" />
